@@ -103,6 +103,8 @@
       document.querySelector('label[for="input-text-12"]').style.display = "none";
       document.querySelector("#input-text-12").disabled = "true";
       document.querySelector("#input-text-12").removeAttribute("required");
+      document.querySelector("#form1-q5-1").value = "Não";
+
     }
 
     document.querySelector("#input-text-12").removeAttribute("required");
