@@ -7,7 +7,7 @@
 *,
 body {
   margin: 0px;
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
   font-family: "Raleway", sans-serif;
 }
 
@@ -174,14 +174,26 @@ textarea {
   border-radius: 13px;
   padding: 10px;
 }
-
+.h2,
+h2 {
+  font-size: 1.5rem;
+}
+.inner-form-prev:hover {
+  text-decoration: none;
+  color: rgb(224, 110, 77);
+}
+.container-fluid {
+  width: 80%;
+}
 .slide {
-  display: flex;
+  display: none;
   min-height: 100vh;
   width: 100%;
   align-items: center;
 }
-
+#intro {
+  display: flex;
+}
 .arrows,
 .label {
   display: inline-block;
@@ -229,6 +241,18 @@ textarea {
 }
 p label {
   margin: 0px 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .col {
+    width: 150vw;
+    display: inline-block;
+    flex-basis: unset;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
 }
 /* DEV STYLES */
 

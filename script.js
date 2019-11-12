@@ -42,10 +42,15 @@
     }
   });
 
+
+
   $(".inner-form-prev").click(function(e) {
     e.preventDefault();
     history.back();
   });
+
+  window.location.hash = "";
+  window.scrollTo(0,0)
 
   function updateView(e) {
     let part = window.location.hash;
@@ -58,13 +63,15 @@
 
     if(part.length > 0 && part.length <= totalForms) {
       let form = $(`[data-form="${part[0]}"]`);
+      form.css("display","flex")
       currentForm = part[0] - 1;
       let top = form.offset().top || 0;
-
-
-      $("html").animate({
+      window.setTimeout(function() {
+        form[0].scrollIntoView(true);
+      },1)
+      /*$("html").animate({
         scrollTop: top
-      },10);
+      },10);*/
       if(part.length == 2) {
         //Mostra a secçao
 
