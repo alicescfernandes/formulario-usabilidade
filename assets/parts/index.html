@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hello!</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- import the webpage's javascript file -->
+  <script src="/assets/js/data_manager.js" defer></script>
+  <script src="/script.js" defer></script>
+
+  <style>
+    section {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="intro" class="slide">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>
+            Questionário de Usabilidade
+          </h1>
+          <p>
+            O website Search Photos tem como objetivo apresentar imagens
+            relevantes para o utilizador. Assim, são disponibilizados três
+            métodos de pesquisa:
+          </p>
+          <ul>
+            <li>Pesquisa por categoria;</li>
+            <li>Pesquisa por cor;</li>
+            <li>Pesquisa por imagem semelhante.</li>
+          </ul>
+          <p>
+            O utilizador pode procurar as imagens mais relevantes de uma
+            determinada categoria, as imagens com mais percentagem de uma cor,
+            e as imagens mais parecidas com uma imagem introduzida pelo
+            utilizador. Este questionário destina-se a avaliar a experiência
+            do utilizador incluindo a usabilidade do website.
+          </p>
+          <p>
+            Pedimos-lhe que execute as tarefas abaixo descritas e, preenchendo
+            este questionário, nos informe acerca das dificuldades que
+            encontrou ao interagir com o sistema e nos dê a sua opinião acerca
+            da interface e das funcionalidades disponíveis. Obrigada pela sua
+            participação
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#/1/" class="virtual_link button">
+            Começar
+
+            <img src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('questionario1.html')
+  @@include('questionario2.html')
+  @@include('questionario3.html')
+  @@include('final.html')
+
+</body>
+
+</html>

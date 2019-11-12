@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+
+    <style>
+        section {
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="overflow:visible;background-attachment: scroll;padding-bottom: 140px;">
+
+    <div class="slide" style="margin-top: 80px;">
+        <div class="container respostas">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Respostas ao questionário de Usabilidade
+                    </h1>
+                    <br>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var respostas = new DOMParser()
+        var doc = respostas.parseFromString(localStorage.getItem("questionario"),"text/xml");
+        var respostas = Array.prototype.slice.call(doc.querySelectorAll("resposta"))
+
+        var html = `<div class="row">
+                <div class="col">
+                    <h2>
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                        {{questao}}
+                    </h2>
+                    <h3>{{resposta}}</h3>
+                    <br>
+                </div>
+            </div>`
+        debugger;
+        respostas.forEach(function(el) {
+            var t = html.replace("{{questao}}",el.getAttribute("questao")).replace("{{resposta}}",el.textContent)
+            document.querySelector(".respostas").insertAdjacentHTML("beforeend",t)
+        })
+    </script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hello!</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- import the webpage's javascript file -->
+  <script src="/assets/js/data_manager.js" defer></script>
+  <script src="/script.js" defer></script>
+
+  <style>
+    section {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="intro" class="slide">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>
+            Questionário de Usabilidade
+          </h1>
+          <p>
+            O website Search Photos tem como objetivo apresentar imagens
+            relevantes para o utilizador. Assim, são disponibilizados três
+            métodos de pesquisa:
+          </p>
+          <ul>
+            <li>Pesquisa por categoria;</li>
+            <li>Pesquisa por cor;</li>
+            <li>Pesquisa por imagem semelhante.</li>
+          </ul>
+          <p>
+            O utilizador pode procurar as imagens mais relevantes de uma
+            determinada categoria, as imagens com mais percentagem de uma cor,
+            e as imagens mais parecidas com uma imagem introduzida pelo
+            utilizador. Este questionário destina-se a avaliar a experiência
+            do utilizador incluindo a usabilidade do website.
+          </p>
+          <p>
+            Pedimos-lhe que execute as tarefas abaixo descritas e, preenchendo
+            este questionário, nos informe acerca das dificuldades que
+            encontrou ao interagir com o sistema e nos dê a sua opinião acerca
+            da interface e das funcionalidades disponíveis. Obrigada pela sua
+            participação
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#/1/" class="virtual_link button">
+            Começar
+
+            <img src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="slide-1" class="slide" data-form="1">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>
+                    Caracterização
+
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <form id="form-1" class="horizonal-stuff">
+                <div id="slide-form-1" data-section="1" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />Idade
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label id="form1-radio-1"> &lt; 18 <input class="input" data-human-string="< 18" required
+                                    type="radio" id="form1-radio-1" name="form1-q1" value="<18" /> </label>
+
+                        </div>
+
+                        <div class="col">
+                            <label for="form1-radio-2">18-25 <input class="input" data-human-string="18-25" required
+                                    id="form1-radio-2" type="radio" name="form1-q1" value="18-25" /></label>
+                        </div>
+                        <div class="col">
+                            <label for="form1-radio-3">26-33 <input class="input" required id="form1-radio-3"
+                                    data-human-string="26-33" type="radio" name="form1-q1" value="26-33" /></label>
+
+                        </div>
+
+                        <div class="col">
+                            <label for="form1-radio-4">34-40 <input class="input" required id="form1-radio-4"
+                                    data-human-string="34-40" type="radio" name="form1-q1" value="34-40" /></label>
+
+                        </div>
+
+                        <div class="col">
+                            <label for="form1-radio-5">&gt; 40
+                                <input class="input" required id="form1-radio-5" type="radio" data-human-string="> 40"
+                                    name="form1-q1" value=">40" />
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a class="virtual_link button validate_form" href="#/1/2/">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-2" data-section="2" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Género
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="form1-q2-1">Masculino <input class="input" data-human-string="" required
+                                    type="radio" id="form1-q2-1" name="form1-q2" value="Masculino" /></label>
+
+                        </div>
+
+                        <div class="col">
+                            <label for="form1-q2-2">Feminimo <input class="input" required id="form1-q2-2" type="radio"
+                                    name="form1-q2" value="Feminimo" /></label>
+
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a class="virtual_link button" href="#/1/3">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-3" data-section="3" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Com que frequência usa a Internet?
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="form1-q3-1">Mais do que 2 horas/dia <input class="input" required type="radio"
+                                    id="form1-q3-1" name="form1-q3" value="Mais do que 2 horas/dia" /></label>
+
+                        </div>
+                        <div class="col">
+                            <label for="form1-q3-2">Menos que 2 horas/dia <input class="input" required type="radio"
+                                    id="form1-q3-2" name="form1-q3" value="Menos que 2 horas/dia" /></label>
+
+                        </div>
+                        <div class="col">
+                            <label for="form1-q3-3">Várias vezes por semana <input class="input" required type="radio"
+                                    id="form1-q3-3" name="form1-q3" value="Várias vezes por semana" /></label>
+
+                        </div>
+                        <div class="col">
+                            <label for="form1-q3-4" for="0">Semanalmente <input class="input" required type="radio"
+                                    id="form1-q3-4" name="form1-q3" value="Semanalmente" /></label>
+
+                        </div>
+                        <div class="col">
+                            <label for="form1-q3-5" for="1">Mensalmente <input class="input" required type="radio"
+                                    id="form1-q3-5" name="form1-q3" value="Mensalmente" /></label>
+
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a class="virtual_link button" href="#/1/4">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-4" data-section="4" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Indique, por ordem de preferência, os Web browsers
+                                que mais utiliza.
+                            </h2>
+                            <!--<h3>
+                                Deve indicar 3. <br />Utilize valores de 1 a 3, sendo 1 o
+                                mais preferido e 3 o menos.
+                            </h3>-->
+
+                            <h3>
+                                Ordene os items de acordo com a preferencia
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="form1-q4-1">
+                            <input id="form1-q4-1" class="input" required type="hidden" name="form1-q4" required
+                                value="Chrome,Edge,Firefox,IE,Opera,Safari" />
+                        </label>
+                        <div class="col">
+                            </label>
+                            <div class="order-input" data-value="chrome" data-name="Chrome">
+                                <div class="arrows">
+                                    <div class="arrow arrow-top">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                    <div class="arrow arrow-bottom">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    Chrome
+                                </div>
+                            </div>
+
+                            <div class="order-input" data-value="edge" data-name="edge">
+                                <div class="arrows">
+                                    <div class="arrow arrow-top">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                    <div class="arrow arrow-bottom">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    Edge
+                                </div>
+                            </div>
+                            <div class="order-input" data-value="firefox" data-name="Firefox">
+                                <div class="arrows">
+                                    <div class="arrow arrow-top">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                    <div class="arrow arrow-bottom">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    Firefox
+                                </div>
+                            </div>
+
+                            <div class="order-input" data-value="ie" data-name="Internet Explorer">
+                                <div class="arrows">
+                                    <div class="arrow arrow-top">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                    <div class="arrow arrow-bottom">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    Internet Explorer
+                                </div>
+                            </div>
+
+                            <div class="order-input" data-value="opera" data-name="Opera">
+                                <div class="arrows">
+                                    <div class="arrow arrow-top">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                    <div class="arrow arrow-bottom">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    Opera
+
+                                </div>
+                            </div>
+
+                            <div class="order-input" data-value="safari" data-name="Safari">
+                                <div class="arrows">
+                                    <div class="arrow arrow-top">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                    <div class="arrow arrow-bottom">
+                                        <img
+                                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    Safari
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a class="virtual_link button" href="#/1/5">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-5" data-section="5" class="form-slide">
+                    <!-- TODO! Texto não entra como input. Contar este input q6 tb-->
+
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+
+                                Utiliza outros websites ou aplicações para procurar
+                                imagens/fotografias digitais?
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="form1-q5-1">
+                            <input required class="input" type="hidden" id="form1-q5-1" name="form1-q5">
+                        </label>
+
+                        <div class="col">
+                            <label for="7">Não
+                                <input required type="radio" id="" name="form1-q99" value="Não" /> </label>
+
+                        </div>
+                        <div class="col">
+                            <label for="8">Sim</label>
+                            <input required type="radio" id="" name="form1-q99" value="Sim" />
+
+                            <label style="display:none" for="input-text-12">Quais:
+                                <input class="input" disabled required type="input" id="input-text-12"
+                                    name="form1-q100" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a class="virtual_link button" href="#/2/"> Próximo <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+  <div id="slide-2" class="slide" data-form="2">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Tarefas
+                </h1>
+                <h5>Por favor, realiza as seguintes tarefas e descreva-nos os resultados obtidos.</h5>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <form id="form-2" class="horizonal-stuff">
+                <div id="slide-form-2" data-section="1" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Tarefa 1 - Explorar o website</h5>
+                            <p>Explore o website livremente durante alguns minutos de modo a ficar mais familiarizado
+                                com as funcionalidades do website.</p>
+                            <h2 class="question" class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />Indique
+                                se encontrou algum erro ou se sentiu alguma
+                                dificuldade em perceber as
+                                funcionalidades principais do website
+                            </h2>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+
+                            <textarea class="input" name="foem2-q1"></textarea>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a class="virtual_link button validate_form" href="#/2/2/">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-2" data-section="2" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Tarefa 2 - Pesquisar Imagens</h5>
+                            <p>Escolha a opção de <strong>pesquisa por palavra chave</strong>, selecione uma categoria
+                                à sua escolha e
+                                observe os resultados. Repita a pesquisa com outras categorias.</p>
+                            <h2 class="question" class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Como classifica os resultados obtidos pela pesquisa por categoria (1 significa “Maus” e
+                                5
+                                significa “Excelentes”)? *
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Maus</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Excelentes</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="input-radio-2_4">1</label>
+                            <input class="input" required type="radio" id="input-radio-2_4" name="form2-q2" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="input-radio-2_5">2</label>
+                            <input class="input" required id="input-radio-2_5" type="radio" name="form2-q2" value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-2_6">3</label>
+                            <input class="input" required id="input-radio-2_6" type="radio" name="form2-q2" value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-2_7">4</label>
+                            <input class="input" required id="input-radio-2_7" type="radio" name="form2-q2" value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-2_8">5</label>
+                            <input class="input" required id="input-radio-2_8" type="radio" name="form2-q2" value="5" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/2/3">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-3" data-section="3" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="question" class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Que dificuldades encontrou para realizar a pesquisa e visualizar os resultados?
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <textarea class="input" name="form2-q3"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/2/4">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-4" data-section="4" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <p>Escolha a opção de pesquisa por cor dominante, selecione uma cor à sua escolha e observe
+                                os
+                                resultados. Repita a pesquisa com outras cores.</p>
+
+                            <h2 class="question" class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Como classifica os resultados obtidos pela pesquisa por cor (1 significa “Maus” e 5
+                                significa “Excelentes”)? *
+                            </h2>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <p>Maus</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Excelentes</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="input-radio-2_4">1</label>
+                            <input class="input" required type="radio" id="input-radio-2_4" name="form2-q4" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="input-radio-2_5">2</label>
+                            <input class="input" required id="input-radio-2_5" type="radio" name="form2-q4" value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-2_6">3</label>
+                            <input class="input" required id="input-radio-2_6" type="radio" name="form2-q4" value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-2_7">4</label>
+                            <input class="input" required id="input-radio-2_7" type="radio" name="form2-q4" value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-2_8">5</label>
+                            <input class="input" required id="input-radio-2_8" type="radio" name="form2-q4" value="5" />
+                        </div>
+                    </div>
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/2/5">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div id="slide-form-5" data-section="5" class="form-slide">
+            <div class="row">
+                <div class="col">
+                    <h2 class="question" class="question">
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+
+                        Que dificuldades encontrou para realizar a pesquisa e visualizar os resultados?
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea class="input" name="form2_q5"></textarea>
+                </div>
+                ´
+            </div>
+            <div class="row input-error">
+                <div class="col">
+                    <p class="">
+                        Verifique se preencheu corretamente o campo e tente
+                        novamente
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <a type="a" class="virtual_link button" href="#/2/6">
+                        Próximo
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                    </a>
+                    <a href="#" class="inner-form-prev">
+                        Anterior
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide-form-6" data-section="6" class="form-slide">
+            <div class="row">
+                <div class="col">
+                    <h2 class="question" class="question">
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+
+                        Como classifica os resultados obtidos pela pesquisa por cor (1 significa “Maus” e 5
+                        significa “Excelentes”)? *
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Maus</p>
+                </div>
+
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                    <p>Excelentes</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="input-radio-2_9">1</label>
+                    <input class="input" required type="radio" id="input-radio-2_9" name="form2-q6" value="1" />
+                </div>
+
+                <div class="col">
+                    <label for="input-radio-2_10">2</label>
+                    <input class="input" required id="input-radio-2_10" type="radio" name="form2-q6" value="2" />
+                </div>
+                <div class="col">
+                    <label for="input-radio-2_11">3</label>
+                    <input class="input" required id="input-radio-2_11" type="radio" name="form2-q6" value="3" />
+                </div>
+                <div class=" col">
+                    <label for="input-radio-2_12">4</label>
+                    <input class="input" required id="input-radio-2_12" type="radio" name="form2-q6" value="4" />
+                </div>
+                <div class="col">
+                    <label for="input-radio-2_13">5</label>
+                    <input class="input" required id="input-radio-2_13" type="radio" name="form2-q6" value="5" />
+                </div>
+            </div>
+
+            <div class="row input-error">
+                <div class="col">
+                    <p class="">
+                        Verifique se preencheu corretamente o campo e tente
+                        novamente
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <a type="a" class="virtual_link button" href="#/2/7">
+                        Próximo
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                    </a>
+                    <a href="#" class="inner-form-prev">
+                        Anterior
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide-form-7" data-section="7" class="form-slide">
+            <div class="row">
+                <div class="col">
+                    <h2 class="question" class="question">
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+
+                        Como classifica os resultados obtidos pela pesquisa por imagem semelhante (1 significa
+                        “Maus” e 5 significa “Excelentes”)? *
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Maus</p>
+                </div>
+
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                    <p>Excelentes</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="input-radio-2_15">1</label>
+                    <input class="input" required type="radio" id="input-radio-2_15" name="form2-q7" value="1" />
+                </div>
+
+                <div class="col">
+                    <label for="input-radio-2_15">2</label>
+                    <input class="input" required id="input-radio-2_15" type="radio" name="form2-q7" value="2" />
+                </div>
+                <div class="col">
+                    <label for="input-radio-2_16">3</label>
+                    <input class="input" required id="input-radio-2_16" type="radio" name="form2-q7" value="3" />
+                </div>
+                <div class="col">
+                    <label for="input-radio-2_17">4</label>
+                    <input class="input" required id="input-radio-2_17" type="radio" name="form2-q7" value="4" />
+                </div>
+                <div class="col">
+                    <label for="input-radio-2_18">5</label>
+                    <input class="input" required id="input-radio-2_18" type="radio" name="form2-q7" value="5" />
+                </div>
+            </div>
+            <div class="row input-error">
+                <div class="col">
+                    <p class="">
+                        Verifique se preencheu corretamente o campo e tente
+                        novamente
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <a type="a" class="virtual_link button" href="#/2/8">
+                        Próximo
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                    </a>
+                    <a href="#" class="inner-form-prev">
+                        Anterior
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide-form-8" data-section="8" class="form-slide">
+            <div class="row">
+                <div class="col">
+                    <h2 class="question" class="question">
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+
+                        Que dificuldades encontrou para realizar a pesquisa e visualizar os resultados?
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea class="input" name="form2-q8"></textarea>
+                </div>
+                ´
+            </div>
+            <div class="row input-error">
+                <div class="col">
+                    <p class="">
+                        Verifique se preencheu corretamente o campo e tente
+                        novamente
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <a type="a" class="virtual_link button" href="#/2/9">
+                        Próximo
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                    </a>
+                    <a href="#" class="inner-form-prev">
+                        Anterior
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide-form-9" data-section="9" class="form-slide">
+            <div class="row">
+                <div class="col">
+                    <h2 class="question" class="question">
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+
+                        Qual o tipo de pesquisa que acha mais adequado?
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea class="input" name="form2-q9"></textarea>
+                </div>
+                ´
+            </div>
+            <div class="row input-error">
+                <div class="col">
+                    <p class="">
+                        Verifique se preencheu corretamente o campo e tente
+                        novamente
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <a type="a" class="virtual_link button" href="#/3/">
+                        Próximo
+                        <img
+                            src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                    </a>
+                    <a href="#" class="inner-form-prev">
+                        Anterior
+                    </a>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
+  <div id="slide-3" class="slide" data-form="3">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Avaliação Gobal
+                </h1>
+                <h5>Por favor, responda às seguintes questões para avaliar a sua experiência de utilização e a
+                    usabilidade do website.</h5>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <form id="form-3" class="horizonal-stuff">
+                <div id="slide-form-3" data-section="1" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Experiência de utilização</h5>
+                            <p>Explore o website livremente durante alguns minutos de modo a ficar mais familiarizado
+                                com as funcionalidades do website.</p>
+                            <h2 class="question" class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />Indique
+                                Para cada par de adjetivos, selecione a opção que melhor descreve a sua experiência de
+                                utilização deste website.
+                            </h2>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Fantastica<label><input class="input" value="0" name="form3-1" type="range" step="1"
+                                        min="1" max="7"></label>Horrivel</p>
+                            <p>Estimulante<label><input class="input" value="0" name="form3-1" type="range" step="1"
+                                        min="1" max="7"></label>Aborrecida</p>
+                            <p>Grafiticante<label><input class="input" value="0" name="form3-1" type="range" step="1"
+                                        min="1" max="7"></label>Frustrante</p>
+                            <p>Fácil<label><input class="input" value="" name="form3-1" type="range" step="1" min="1"
+                                        max="7"></label>Difícil
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a class="virtual_link button validate_form" href="#/3/2/">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-2" data-section="2" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>SUS - System Usability Scale</h5>
+                            <p>Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha
+                                (1
+                                significa “Discorda completamente” e 5 significa “Concorda completamente”).</p>
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Acho que gostaria de utilizar este website com frequência *
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Discorda completamente</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Concorda completamente</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="input-radio-3_4">1</label>
+                            <input class="input" required type="radio" id="input-radio-3_4" name="form3-q2" value="M" />
+                        </div>
+
+                        <div class="col">
+                            <label for="input-radio-3_5">2</label>
+                            <input class="input" required id="input-radio-3_5" type="radio" name="form3-q2" value="F" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-3_6">3</label>
+                            <input class="input" required id="input-radio-3_6" type="radio" name="form3-q2" value="F" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-3_7">4</label>
+                            <input class="input" required id="input-radio-3_7" type="radio" name="form3-q2" value="F" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-3_8">5</label>
+                            <input class="input" required id="input-radio-3_8" type="radio" name="form3-q2" value="F" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/3/3">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-3" data-section="3" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>SUS - System Usability Scale</h5>
+                            <p>Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha
+                                (1
+                                significa “Discorda completamente” e 5 significa “Concorda completamente”).</p>
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Considerei o website mais complexo do que necessário. *
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Discorda completamente</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Concorda completamente</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="input-radio-3_9">1</label>
+                            <input class="input" required type="radio" id="input-radio-3_9" name="form3-q3" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="input-radio-3_10">2</label>
+                            <input class="input" required id="input-radio-3_10" type="radio" name="form3-q3"
+                                value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-3_11">3</label>
+                            <input class="input" required id="input-radio-3_11" type="radio" name="form3-q3"
+                                value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-3_12">4</label>
+                            <input class="input" required id="input-radio-3_12" type="radio" name="form3-q3"
+                                value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="input-radio-3_13">5</label>
+                            <input class="input" required id="input-radio-3_13" type="radio" name="form3-q3"
+                                value="5" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/3/4">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-4" data-section="4" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>SUS - System Usability Scale</h5>
+                            <p>Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha
+                                (1
+                                significa “Discorda completamente” e 5 significa “Concorda completamente”).</p>
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Achei o website fácil de utilizar. *
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Discorda completamente</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Concorda completamente</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">1</label>
+                            <input class="input" required type="radio" id="" name="form3-q4" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="">2</label>
+                            <input class="input" required id="" type="radio" name="form3-q4" value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="">3</label>
+                            <input class="input" required id="" type="radio" name="form3-q4" value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="">4</label>
+                            <input class="input" required id="" type="radio" name="form3-q4" value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="">5</label>
+                            <input class="input" required id="" type="radio" name="form3-q4" value="5" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/3/5">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="slide-form-5" data-section="5" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>SUS - System Usability Scale</h5>
+                            <p>Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha
+                                (1
+                                significa “Discorda completamente” e 5 significa “Concorda completamente”).</p>
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Acho que necessitaria de ajuda de um técnico para conseguir utilizar este website. *
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Discorda completamente</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Concorda completamente</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">1</label>
+                            <input class="input" required type="radio" id="" name="form3-q5" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="">2</label>
+                            <input class="input" required id="" type="radio" name="form3-q5" value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="">3</label>
+                            <input class="input" required id="" type="radio" name="form3-q5" value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="">4</label>
+                            <input class="input" required id="" type="radio" name="form3-q5" value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="">5</label>
+                            <input class="input" required id="" type="radio" name="form3-q5" value="5" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/3/6">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-6" data-section="6" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>SUS - System Usability Scale</h5>
+                            <p>Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha
+                                (1
+                                significa “Discorda completamente” e 5 significa “Concorda completamente”).</p>
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Considerei que as várias funcionalidades deste website estavam bem integradas. *
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Discorda completamente</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Concorda completamente</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">1</label>
+                            <input class="input" required type="radio" id="" name="form3-q6" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="">2</label>
+                            <input class="input" required id="" type="radio" name="form3-q6" value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="">3</label>
+                            <input class="input" required id="" type="radio" name="form3-q6" value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="">4</label>
+                            <input class="input" required id="" type="radio" name="form3-q6" value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="">5</label>
+                            <input class="input" required id="" type="radio" name="form3-q6" value="5" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/3/7">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="slide-form-7" data-section="7" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>SUS - System Usability Scale</h5>
+                            <p>Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha
+                                (1
+                                significa “Discorda completamente” e 5 significa “Concorda completamente”).</p>
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Considerei que as várias funcionalidades deste website estavam bem integradas. *
+
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Discorda completamente</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Concorda completamente</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">1</label>
+                            <input class="input" required type="radio" id="" name="form3-q7" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="">2</label>
+                            <input class="input" required id="" type="radio" name="form3-q7" value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="">3</label>
+                            <input class="input" required id="" type="radio" name="form3-q7" value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="">4</label>
+                            <input class="input" required id="" type="radio" name="form3-q7" value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="">5</label>
+                            <input class="input" required id="" type="radio" name="form3-q7" value="5" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/3/8">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-form-8" data-section="8" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>SUS - System Usability Scale</h5>
+                            <p>Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha
+                                (1
+                                significa “Discorda completamente” e 5 significa “Concorda completamente”).</p>
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Suponho que a maioria das pessoas aprenderia a utilizar rapidamente este website. *
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Discorda completamente</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Concorda completamente</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">1</label>
+                            <input class="input" required type="radio" id="" name="form3-q8" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="">2</label>
+                            <input class="input" required id="" type="radio" name="form3-q8" value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="">3</label>
+                            <input class="input" required id="" type="radio" name="form3-q8" value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="">4</label>
+                            <input class="input" required id="" type="radio" name="form3-q8" value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="">5</label>
+                            <input class="input" required id="" type="radio" name="form3-q8" value="5" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/3/9">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div id="slide-form-9" data-section="9" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>SUS - System Usability Scale</h5>
+                            <p>Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha
+                                (1
+                                significa “Discorda completamente” e 5 significa “Concorda completamente”).</p>
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Considerei o website muito complicado de utilizar. *
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Discorda completamente</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Concorda completamente</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">1</label>
+                            <input class="input" required type="radio" id="" name="form3-q9" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="">2</label>
+                            <input class="input" required id="" type="radio" name="form3-q9" value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="">3</label>
+                            <input class="input" required id="" type="radio" name="form3-q9" value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="">4</label>
+                            <input class="input" required id="" type="radio" name="form3-q9" value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="">5</label>
+                            <input class="input" required id="" type="radio" name="form3-q9" value="5" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/3/10">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="slide-form-10" data-section="10" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>SUS - System Usability Scale</h5>
+                            <p>Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha
+                                (1
+                                significa “Discorda completamente” e 5 significa “Concorda completamente”).</p>
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                - Senti-me muito confiante a utilizar este website. *
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Discorda completamente</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Concorda completamente</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">1</label>
+                            <input class="input" required type="radio" id="" name="form3-q10" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="">2</label>
+                            <input class="input" required id="" type="radio" name="form3-q10" value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="">3</label>
+                            <input class="input" required id="" type="radio" name="form3-q10" value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="">4</label>
+                            <input class="input" required id="" type="radio" name="form3-q10" value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="">5</label>
+                            <input class="input" required id="" type="radio" name="form3-q10" value="5" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/3/11">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="#" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="slide-form-11" data-section="11" class="form-slide">
+                    <div class="row">
+                        <div class="col">
+                            <h5>SUS - System Usability Scale</h5>
+                            <p>Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha
+                                (1
+                                significa “Discorda completamente” e 5 significa “Concorda completamente”).</p>
+                            <h2 class="question">
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                                Tive que aprender muito antes de conseguir lidar com este website. *
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Discorda completamente</p>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>Concorda completamente</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">1</label>
+                            <input class="input" required type="radio" id="" name="form3-q11" value="1" />
+                        </div>
+
+                        <div class="col">
+                            <label for="">2</label>
+                            <input class="input" required id="" type="radio" name="form3-q11" value="2" />
+                        </div>
+                        <div class="col">
+                            <label for="">3</label>
+                            <input class="input" required id="" type="radio" name="form3-q11" value="3" />
+                        </div>
+                        <div class="col">
+                            <label for="">4</label>
+                            <input class="input" required id="" type="radio" name="form3-q11" value="4" />
+                        </div>
+                        <div class="col">
+                            <label for="">5</label>
+                            <input class="input" required id="" type="radio" name="form3-q11" value="5" />
+                        </div>
+                    </div>
+
+                    <div class="row input-error">
+                        <div class="col">
+                            <p class="">
+                                Verifique se preencheu corretamente o campo e tente
+                                novamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a type="a" class="virtual_link button" href="#/4/">
+                                Próximo
+                                <img
+                                    src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Farrow.svg?v=1573420993744" />
+                            </a>
+                            <a href="/" target="self" class="inner-form-prev  ">
+                                Anterior
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+  <div id="slide-4" class="slide" data-form="4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>
+                    Obrigado por preencher o questionário
+                </h1>
+                <p>Agradeçemos a sua colaboração.</p>
+                <a class="button" target="_self" href="/">
+
+                    <img
+                        src="https://cdn.glitch.com/796da011-e95f-4e02-bfad-b54ff3e53b14%2Fsmall_arrow.svg?v=1573422517468" />
+                    Voltar ao Início</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="slide-form-1" data-section="1" class="form-slide">
+                <div class="row input-error">
+                    <div class="col">
+                        <p class="">
+                            Verifique se preencheu corretamente o campo e tente
+                            novamente
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
